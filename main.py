@@ -1,7 +1,8 @@
 # Hellball main file, houses main code.
 
 from random import randint
-from values import firstNames, lastNames, ethnicities, quirks
+from statistics import mean
+from values import firstNames, lastNames, ethnicities, quirks, battingStyles, pitchingStyles
 
 def generatePlayer():
   # Generate a list of random numbers to create random players
@@ -22,10 +23,10 @@ def generatePlayer():
   playerSeed.append(randint(18, 55))
 
   # Quirk ID
-  playerSeed.append(randint(0, 18))
+  playerSeed.append(randint(1, 29))
 
   # Quirk ID 2
-  quirk2 = randint(1, 19)
+  quirk2 = randint(1, 29)
   if quirk2 != playerSeed[4]:
     playerSeed.append(quirk2)
   else:
@@ -58,11 +59,11 @@ def generatePlayer():
   # Nerves
   playerSeed.append(randint(0, 100))
 
-  # Pitching Style (Not implemented yet)
-  # playerSeed.append(randint(1, 25))
+  # Pitching Style
+  playerSeed.append(randint(0, 19))
 
-  # Batting Style (Not implemented yet)
-  # playerSeed.append(randint(1, 25))
+  # Batting Style
+  playerSeed.append(randint(0, 19))
 
   return playerSeed
 
@@ -77,23 +78,30 @@ def generateTeam():
         
   return team
 
-def printPlayers(team):
+def printPlayers(team, i):
   # Print out sexily ;)
 
-  print("TEAM " + str(team))
+  print("TEAM " + str(i))
   for player in team:
-    print(firstNames[player[0]], lastNames[player[1]])
-    print(ethnicities[player[2]])
+    print("Name: " + firstNames[player[0]], lastNames[player[1]])
+    print("Ethnicity: " + ethnicities[player[2]])
     print(str(player[3]) + " Years Old")
-    print(quirks[player[4]])
-    print(quirks[player[5]])
+    print("Quirk 1: " + quirks[player[4]])
+    print("Quirk 2: " + quirks[player[5]])
+    print("Creativity: " + str(player[6]) + "\tDexterity: " + str(player[7]) + "\tPerception: " + str(player[8]))
+    print("Intelligence: " + str(player[9]) + "\tAdaptability: " + str(player[10]) + "\tStrength: " + str(player[11]))
+    print("Patience: " + str(player[12]) + "\tInsight: " + str(player[13]) + "\tNerves: " + str(player[14]))
+    print("Pitching Style: " + pitchingStyles[player[15]])
+    print("Batting Style: " + battingStyles[player[16]])
+    print("Pitching Score: " + str(mean([player[6], player[7], player[8], player[9], player[14]])))
+    print("Batter Score: " + str(mean([player[10], player[11], player[12], player[13], player[14]])))
     print("\n")
 
 def main():
   # Generate Two Teams
   for i in range(1, 3):
     team = generateTeam()
-    printPlayers(team)
+    printPlayers(team, i)
 
 
 if __name__ == "__main__":

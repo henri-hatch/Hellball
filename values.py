@@ -6,4 +6,8 @@ lastNames = ["Orange", "Cruz", "Curry", "Robinson", "Vargas", "Widstrom", "Diaz"
 
 ethnicities = ["White", "White", "White", "White", "Hispanic", "Hispanic", "Asian", "Black", "Black"]
 
-quirks = ["", "All-Star", "One-Eyed", "Fast Fingers", "Fan Favorite", "Womanizer", "Fastball Specialist", "Curveball Specialist", "Slugger", "Cool-Headed", "Cheater", "Dugout Comedian", "War Veteran", "Speed Freak", "Egomaniac", "Coach’s Son", "Child Prodigy", "King of the Jungle", "Laidback", "Trickster"]
+quirks = ["", "All-Star", "One-Eyed", "Fast Fingers", "Fan Favorite", "Womanizer", "Fastball Specialist", "Curveball Specialist", "Slugger", "Cool-Headed", "Cheater", "Dugout Comedian", "War Veteran", "Speed Freak", "Egomaniac", "Coach’s Son", "Child Prodigy", "King of the Jungle", "Laidback", "Trickster", "At-Bat Taunter", "Base Thief", "Glass Bones", "Killjoy", "Sprinter", "Giant", "Old-Fashioned", "Honorable", "Loose-Lipped", "Rules Lawyer"]
+
+battingStyles = ["Go For Broke", "Cautious", "Crowd Pleaser", "Gwynn", "Carew", "Great Bambino", "Overthinker", "Blank-Slate", "Book Worm", "Bunt-Heavy", "Foul-Mouthed", "Executor", "Etcha-Sketch", "Bane of Pitchers", "Water Boy", "Improvised", "Hungover", "Self Sacrifice", "Arm of God", "Roulette Wheel"]
+
+pitchingStyles = ["Knucklehead", "Kershaw", "Fork", "Fastball-Heavy", "Curveball-Heavy", "Ump-Hugger", "Paranoid", "Spoon", "Magician", "Caveman", "Blank-Slate", "Overthinker", "Base-Checker", "Crowd Pleaser", "Matthewson", "Splitterball-Heavy", "Bowler", "Hands of God", "Bruiser", "Roulette Wheel"]
